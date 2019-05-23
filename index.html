@@ -7,9 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="portfolio, frontend">
   <meta name="author" content="Natalia Famulska">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <nav>
+    <div class="logo">
+      <h3 class="log">Natalia Famulska</h3>
+    </div>
+    <ul class="navigation" role="navigation">
+      <a href="#" class="nav-opt"><li  class="nav-opt">Dom</li></a>
+      <a href="#" class="nav-opt"><li class="nav-opt">Projekty</li></a>
+      <a href="#" class="nav-opt"><li class="nav-opt">Kontakt</li></a>
+    </ul>
+  </nav>
+
   <header class="pg-head">
     <article class="head-welcome">
     <h1 class="head-head">Witaj</h2>
@@ -18,64 +32,67 @@
     </div>
     </article>
     <div class="myphoto">
-      <!-- póki co puste -->
+      <!-- póki co puste, będzie tam moje zdjęcie -->
     </div>
   </header>
 
-  <section class="square">
-    <header class="head-square">
-      <h2>Header 2</h2>
-    </header>
-    <article class="square-text">
-      <p>Integer at ipsum felis. In in quam nec dui iaculis egestas. Nunc vulputate tellus enim, in venenatis arcu porttitor ut. Integer sapien lorem, egestas in scelerisque id, aliquet id est. Etiam imperdiet, odio a condimentum scelerisque, mauris quam molestie risus, eu maximus justo nunc id leo. Nam erat purus, luctus ut finibus id, rutrum nec metus. Mauris tristique, nunc non volutpat viverra, enim urna auctor eros, a consequat mauris risus vel dui.</p>
-    </article>
-  </section>
+  <div class="main-content">
 
-  <section class="projects">
-    <header class="head-projects">
-      <h2>Projekty</h>
-    </header>
-    <article class="projectbar">
-      <div div="project pt1 ">
-        <!-- wkrotce będzie tu zdjęcie-->
-      </div>
-      <div div="project pt2 ">
-        <!-- wkrotce będzie tu zdjęcie-->
-      </div>
-      <div div="project pt3 ">
-        <!-- wkrotce będzie tu zdjęcie-->
-      </div>
-    </article>
-  </section>
+  <!--  <section class="square">
+      <header class="head-square">
+        <h2>Header 2</h2>
+      </header>
+      <article class="square-text">
+        <p>Integer at ipsum felis. In in quam nec dui iaculis egestas. Nunc vulputate tellus enim, in venenatis arcu porttitor ut. Integer sapien lorem, egestas in scelerisque id, aliquet id est. Etiam imperdiet, odio a condimentum scelerisque, mauris quam molestie risus, eu maximus justo nunc id leo. Nam erat purus, luctus ut finibus id, rutrum nec metus. Mauris tristique, nunc non volutpat viverra, enim urna auctor eros, a consequat mauris risus vel dui.</p>
+      </article>
+    </section> -->
 
-  <section class="contacts">
-    <header><h2>Szukasz kontaktu?</h></header>
-    <article class="form">
-      <form action="mailto:nataliafamulska@wp.pl">
-        <label>Imię</label> <input type="text" name="imie">
-        <laber>Email</laber> <input type="text" name="nazwisko"> <br>
-        <input type="text" name="texarea">
-      </form>
-    </article>
-  </section>
+    <section class="projects">
+      <header class="head-projects">
+        <h2>Projekty</h>
+      </header>
+      <article class="projectbar">
+        <div class="project pt1 ">
+          <!-- wkrotce będzie tu zdjęcie-->
+        </div>
+        <div class="project pt2 ">
+          <!-- wkrotce będzie tu zdjęcie-->
+        </div>
+        <div class="project pt3 ">
+          <!-- wkrotce będzie tu zdjęcie-->
+        </div>
+      </article>
+      <a href="#" class="project-link">Zobacz więcej</a>
+    </section>
 
-  <section class="circle">
-    <header class="head-circle">
-      <h2>Moje umięjetności</h2>
-    </header>
-    <article class="text-circle">
-      <p>Integer at ipsum felis. In in quam nec dui iaculis egestas. Nunc vulputate tellus enim, in venenatis arcu porttitor ut. Integer sapien lorem, egestas in scelerisque id, aliquet id est. Etiam imperdiet, odio a condimentum scelerisque, mauris quam molestie risus, eu maximus justo nunc id leo. Nam erat purus, luctus ut finibus id, rutrum nec metus. Mauris tristique, nunc non volutpat viverra, enim urna auctor eros, a consequat mauris risus vel dui.</p>
-    </article>
-  </section>
+
+    <section class="circle">
+      <header class="head-circle">
+        <h2>Moje umięjetności</h2>
+        <hr class="line-circle">
+      </header>
+      <article class="text-circle">
+        <p>Integer at ipsum felis. In in quam nec dui iaculis egestas. Nunc vulputate tellus enim, in venenatis arcu porttitor ut. Integer sapien lorem, egestas in scelerisque id, aliquet id est. Etiam imperdiet, odio a condimentum scelerisque, mauris quam molestie risus, eu maximus justo nunc id leo. Nam erat purus, luctus ut finibus id, rutrum nec metus. Mauris tristique, nunc non volutpat viverra, enim urna auctor eros, a consequat mauris risus vel dui.</p>
+      </article>
+    </section>
+
+    <section class="contacts">
+      <header class="head-contacts"><h2>Szukasz kontaktu?</h></header>
+      <article class="form">
+        <form action="mailto:nataliafamulska@wp.pl">
+          <input type="text" name="imie" placeholder="Imię"  class="dane-kontaktowe">
+          <input type="text" name="nazwisko" placeholder="Nazwisko" class="dane-kontaktowe"> <br>
+          <input type="text" name="texarea" class="mess" placeholder="Wiadomość"> <br>
+          <input type="submit" value="Submit" id="wyślij">
+        </form>
+      </article>
+    </section>
+
+  </div>
 
   <footer>
-    <article>
-      <!-- w czasie pracy -->
-    </article>
+    <p>Copyright &copy Natalia Krystyna Famulska 2019</p>
   </footer>
-
-  <script>
-    //alert("jeszcze w czasie pracy");
-  </script>
+  
 </body>
 </html>
