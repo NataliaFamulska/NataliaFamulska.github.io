@@ -1,25 +1,77 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #070501;
-  color: white;
+  background-color: #EAE5D7;
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #EAE5D7;
+  height: 4em;
+
+  position: sticky;
+  top: 0;
+}
+
+.navigation{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.logo{
+  width: 30%;
+  margin-left: 2em;
+}
+
+.log{
+
+}
+
+.log:hover{
+  border-bottom: 1px solid black;
+}
+
+.nav-opt{
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-right: 1px dotted #EDD0C0;
+  margin-right: 5%;
+}
+
+.nav-opt:hover{
+  border-bottom: 1px solid black;
 }
 
 .pg-head {
-  background-color: #390025;
+  background-color: #EDD0C0;
   width: 100%;
   height: 20em;
   margin-bottom: 10%;
   text-align: center;
 }
 
-.head-welcome {}
+.head-welcome {
+
+}
 
 .head-head {
   margin: 0px;
+  font-size: 3.5em;
+  padding-top: 1.5em;
 }
 
-.head-text {}
+.head-text {
+  font-size: 1.25em;
+}
 
 .myphoto {
   width: 225px;
@@ -29,24 +81,230 @@ body {
   margin: auto;
 }
 
-.square {}
+.main-content{
+  margin-top: 10em;
+}
 
-.head-square {}
+.square {
+  width: 100%;
+  background-color: rgb(91, 107, 97);
+  height: 30em;
 
-.square-text {}
+}
 
-.projects {}
+.head-square {
+  position: relative;
+  top: 2em;
+  font-size: 2em;
+  background-color: rgb(39, 84, 129);
+  width: 80%;
+  height: 13%;
+  margin-bottom: 3em;
+}
 
-.head-projects {}
+.square-text {
+  width: 90%;
+  background-color: white;
+  color:black;
+  text-align: right;
+  font-size: 1.25em;
+  padding: 5px;
+}
 
-.projectbar {}
+.projects {
 
-.contacts {}
+}
 
-.form {}
+.head-projects {
+  text-align: center;
+  font-size: 1.75em;
+}
 
-.circle {}
+.projectbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-.head-circle {}
+.project:hover {
+   opacity: 0.8;
+}
 
-.text-circle {}
+.pt1 {
+  width: 15em;
+  height: 10em;
+  background-color: #CFCDCC;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pt2 {
+  width: 15em;
+  height: 10em;
+  background-color: #DAD8CC;
+}
+
+.pt3 {
+  width: 15em;
+  height: 10em;
+  background-color: #B5B3B7;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.project-link{
+  width: 30%;
+  background-color: #EDD0C0;
+  height: 2em;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 2em 35% 2em 35%;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 100%;
+  line-height: 1.75em;
+  transition: background-color 0.5s linear;
+}
+
+.project-link:hover{
+  background-color: #B5B3B7;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 6em 10% 6em 10%;
+}
+
+.head-contacts {
+  text-align: center;
+  font-size: 1em;
+}
+
+.form {
+
+}
+
+.dane-kontaktowe {
+  width: 100%;
+  height: 3em;
+  border: 1px solid #EAE5D7;
+  border-radius: 8px;
+  margin: 5px 0 5px 0;
+  text-align: center;
+}
+
+.mess {
+  width: 100%;
+  height: 10em;
+  border: 1px solid #EAE5D7;
+  border-radius: 8px;
+  margin: 5px 0 5px 0;
+  text-align: center;
+}
+
+#wyślij{
+  background-color: #FAEBDF;
+  border-radius: 20px;
+  width: 50%;
+  height: 2em;
+  margin: 5px 25% 5px 25%;
+}
+
+.circle {
+  width: 60%;
+  margin: 6em 15% 5em 15%;
+  background-color: #FAEBDF;
+  padding: 5%;
+  border-radius: 20px;
+  text-align: center
+}
+
+.head-circle {
+  font-size: 1.5em;;
+}
+
+.line-circle{
+  width: 60%;
+  margin: auto;
+  background-color: #B5B3B7;
+}
+
+.text-circle {
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+}
+
+footer{
+  background-color: #5c5c5c;
+  padding: 1em;
+  font-size: 1em;
+  text-align: center;
+}
+
+@media (max-width: 550px){
+  .navigation{
+    width: 50%;
+  }
+
+  .logo{
+    width: 50%;
+  }
+
+  .head-text{
+    margin: 0 5% 3.5em 5%;
+  }
+
+  .pg-head{
+    height: 25em;
+  }
+
+  nav{
+    font-size: 1em;
+  }
+
+  .logo{
+    margin-left: 1em;
+  }
+
+}
+
+@media (max-width: 800px){
+  .projectbar{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.pt1 {
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+
+.pt2 {
+  border-radius: 20px;
+    margin-bottom: 1em;
+}
+
+.pt3 {
+  border-radius: 20px;
+}
+}
+
+
+
+
+/* kolory
+#FAEBDF
+#EDD0C0
+#B5B3B7
+#CFCDCC
+#DAD8CC
+#EAE5D7
+*/
+
