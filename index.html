@@ -16,12 +16,13 @@
     <div class="logo">
       <h3 class="log">Natalia Famulska</h3>
     </div>
-    <ul class="navigation" role="navigation">
-      <li  class="nav-opt"><a href="#dom" class="nav-link">Dom <i class="fas fa-home"></i></a></li>
-      <li class="nav-opt"><a href="#projekty" class="nav-link">Projekty <i class="far fa-file-code"></i></a></li>
-      <li class="nav-opt"><a href="#umiejętności" class="nav-link">Umiejętności <i class="fas fa-file-code"></i></i></a></li>
-      <li class="nav-opt"><a href="#kontakt" class="nav-link">Kontakt <i class="far fa-paper-plane"></i></a></li>
-    </ul>
+    <button id="menu-bar"><i class="fas fa-bars fa-2x"></i></button>
+      <ul class="hide" id="navigation" role="navigation">
+        <li  class="nav-opt"><a href="#dom" class="nav-link">Dom <i class="fas fa-home"></i></a></li>
+        <li class="nav-opt"><a href="#projekty" class="nav-link">Projekty <i class="far fa-file-code"></i></a></li>
+        <li class="nav-opt"><a href="#umiejętności" class="nav-link">Umiejętności <i class="fas fa-file-code"></i></i></a></li>
+        <li class="nav-opt"><a href="#kontakt" class="nav-link">Kontakt <i class="far fa-paper-plane"></i></a></li>
+      </ul>
   </nav>
 
   <header class="pg-head" id="dom">
@@ -87,16 +88,41 @@
 
 
   <section class="with-footer">
-    <h4>Więcej kontaktu ze mną</h4>
-    <p>
+    <article class="footer-contact">
+      <h4 class="head-foot">Więcej kontaktu ze mną</h4>
+    <p class="foot-text">
       Email: nataliafamulska@wp.pl<br>
-      Numer telefonu: 000-000-000<br>
+      Numer telefonu: 000-000-000
     </p>
+    </article>
+    <article class="footer-socialmedia">
+      <h4 class="head-foot">Możesz mnie znaleźć na</h4>
+      <div class="foot-links">
+        <a href="#" class="fb">Facebook</a> <br>
+        <a href="#" class="gh">GitHub</a> <br>
+        <a href="#" class="cp">CodePen</a> <br>
+      </div>
+    </article>
   </section>
   <footer>
     <p>Copyright &copy Natalia Krystyna Famulska 2019</p>
   </footer>
 
+  <script>
+  	document.getElementById('menu-bar').onclick = function()
+    {
+    var element = document.getElementById('navigation');
+        if (element.className === 'hide')
+      {
+        element.className = 'show';
+      }
+        else
+      {
+        element.className = 'hide';
+        document.getElementById('menu-bar').className = 'show';
+      }
+    }
+	</script>
+
 </body>
 </html>
-
