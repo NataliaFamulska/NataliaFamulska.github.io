@@ -5,77 +5,98 @@
   <title>Frontend developer portfolio</title>
   <meta name="description" content="Moje portfolio"> <!-- do zrobienia-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="portfolio, frontend">
   <meta name="author" content="Natalia Famulska">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="pg-head">
-    <article class="head-welcome">
-    <h1 class="head-head">Witaj</h2>
+
+  <nav>
+    <div class="logo">
+      <h3 class="log">Natalia Famulska</h3>
+    </div>
+    <ul class="navigation" role="navigation">
+      <li  class="nav-opt"><a href="#dom" class="nav-link">Dom <i class="fas fa-home"></i></a></li>
+      <li class="nav-opt"><a href="#projekty" class="nav-link">Projekty <i class="far fa-file-code"></i></a></li>
+      <li class="nav-opt"><a href="#umiejętności" class="nav-link">Umiejętności <i class="fas fa-file-code"></i></i></a></li>
+      <li class="nav-opt"><a href="#kontakt" class="nav-link">Kontakt <i class="far fa-paper-plane"></i></a></li>
+    </ul>
+  </nav>
+
+  <header class="pg-head" id="dom">
+    <article>
+    <h1 class="head-head">Witaj!</h2>
     <div class="head-text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Nazywam się Natalia, jestem początkującym front-endowcem.</p>
     </div>
     </article>
     <div class="myphoto">
-      <!-- póki co puste -->
+      <img src="ja.png" alt="to ja" class="photo"></img>
     </div>
   </header>
 
-  <section class="square">
-    <header class="head-square">
-      <h2>Header 2</h2>
-    </header>
-    <article class="square-text">
-      <p>Integer at ipsum felis. In in quam nec dui iaculis egestas. Nunc vulputate tellus enim, in venenatis arcu porttitor ut. Integer sapien lorem, egestas in scelerisque id, aliquet id est. Etiam imperdiet, odio a condimentum scelerisque, mauris quam molestie risus, eu maximus justo nunc id leo. Nam erat purus, luctus ut finibus id, rutrum nec metus. Mauris tristique, nunc non volutpat viverra, enim urna auctor eros, a consequat mauris risus vel dui.</p>
-    </article>
-  </section>
+  <div class="main-content">
 
-  <section class="projects">
-    <header class="head-projects">
-      <h2>Projekty</h>
-    </header>
-    <article class="projectbar">
-      <div div="project pt1 ">
-        <!-- wkrotce będzie tu zdjęcie-->
-      </div>
-      <div div="project pt2 ">
-        <!-- wkrotce będzie tu zdjęcie-->
-      </div>
-      <div div="project pt3 ">
-        <!-- wkrotce będzie tu zdjęcie-->
-      </div>
-    </article>
-  </section>
+    <section class="projects"  id="projekty">
+      <header class="head-projects">
+        <h2>Projekty</h>
+      </header>
+      <article class="projectbar">
+        <div class="project pt1 ">
+          <img src="projekt1.jpg" class="project"> <!-- Photo by Hédi Benyounes on Unsplash -->
+        </div>
+        <div class="project pt2 ">
+          <img src="projekt2.jpg" class="project"> <!-- Photo by Ruud Luijten on Unsplash -->
+        </div>
+        <div class="project pt3 ">
+          <img src="projekt3.jpg" class="project"> <!-- Photo by Sandrachile . on Unsplash -->
+        </div>
+      </article>
+    </section>
 
-  <section class="contacts">
-    <header><h2>Szukasz kontaktu?</h></header>
-    <article class="form">
+
+    <section class="skill" id="#umiejętności">
+      <header class="head-skill">
+        <h2>Umięjetności</h2>
+        <hr class="line-skill">
+      </header>
+      <article class="text-skill">
+        <div class="skills">
+        <h3 class="skills-head">HTML</h3>
+        <p>Tworzę w standradzie HTML5.</p>
+        </div>
+        <div class="skills">
+        <h3 class="skills-head">CSS</h3>
+        <p>Potrafię stworzyć responsywną stronę z animacjami, opartą o flexbox.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="contacts" id="kontakt">
+      <header class="head-contacts"><h2>Szukasz kontaktu?</h></header>
       <form action="mailto:nataliafamulska@wp.pl">
-        <label>Imię</label> <input type="text" name="imie">
-        <laber>Email</laber> <input type="text" name="nazwisko"> <br>
-        <input type="text" name="texarea">
+        <input type="text" name="imie" placeholder="Imię"  class="dane-kontaktowe">
+        <input type="text" name="nazwisko" placeholder="Nazwisko" class="dane-kontaktowe"> <br>
+        <textarea class="mess" rows="5" placeholder="Napisz do mnie"></textarea>
+        <button id="wyślij">Wyślij <i class="far fa-paper-plane"></i></button>
       </form>
-    </article>
-  </section>
+    </section>
 
-  <section class="circle">
-    <header class="head-circle">
-      <h2>Moje umięjetności</h2>
-    </header>
-    <article class="text-circle">
-      <p>Integer at ipsum felis. In in quam nec dui iaculis egestas. Nunc vulputate tellus enim, in venenatis arcu porttitor ut. Integer sapien lorem, egestas in scelerisque id, aliquet id est. Etiam imperdiet, odio a condimentum scelerisque, mauris quam molestie risus, eu maximus justo nunc id leo. Nam erat purus, luctus ut finibus id, rutrum nec metus. Mauris tristique, nunc non volutpat viverra, enim urna auctor eros, a consequat mauris risus vel dui.</p>
-    </article>
-  </section>
+  </div>
 
+
+  <section class="with-footer">
+    <h4>Więcej kontaktu ze mną</h4>
+    <p>
+      Email: nataliafamulska@wp.pl<br>
+      Numer telefonu: 000-000-000<br>
+    </p>
+  </section>
   <footer>
-    <article>
-      <!-- w czasie pracy -->
-    </article>
+    <p>Copyright &copy Natalia Krystyna Famulska 2019</p>
   </footer>
 
-  <script>
-    //alert("jeszcze w czasie pracy");
-  </script>
 </body>
 </html>
+
