@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="mail.js"></script>
+  <script src="menubar.js"></script>
 </head>
 <body>
 
@@ -76,10 +78,13 @@
 
     <section class="contacts" id="kontakt">
       <header class="head-contacts"><h2>Szukasz kontaktu?</h></header>
-      <form action="mailto:nataliafamulska@wp.pl">
-        <input type="text" name="imie" placeholder="Imię"  class="dane-kontaktowe">
-        <input type="text" name="nazwisko" placeholder="Nazwisko" class="dane-kontaktowe"> <br>
-        <textarea class="mess" rows="5" placeholder="Napisz do mnie"></textarea>
+      <form name="mailer" enctype="text/plain" action="" onSubmit="(document.mailer.action += mailtoandsubject)">
+        <select name="mailtoperson" onChange="msg(this.form)" class="dane-kontaktowe">
+          <option value="nataliafamulska@wp.pl">nataliafamulska@wp.pl</option><br>
+        <input type="email" name="email" placeholder="Twój@email.com" onChange="msg(this.form)" class="dane-kontaktowe"> <br>
+        <input type="text" name="name" placeholder="Imię i nazwisko" onChange="msg(this.form)" class="dane-kontaktowe"> <br>
+        <input type="text" name="subject" placeholder="Tytuł" onChange="msg(this.form)" class="dane-kontaktowe"> <br>
+        <textarea name="message" class="mess" rows="5" placeholder="Napisz do mnie" OnChange="msg(this.form)"></textarea>
         <button id="wyślij">Wyślij <i class="far fa-paper-plane"></i></button>
       </form>
     </section>
@@ -88,14 +93,14 @@
 
 
   <section class="with-footer">
-    <article class="footer-contact">
+    <article class="footer-art">
       <h4 class="head-foot">Więcej kontaktu ze mną</h4>
     <p class="foot-text">
       Email: nataliafamulska@wp.pl<br>
       Numer telefonu: 000-000-000
     </p>
     </article>
-    <article class="footer-socialmedia">
+    <article class="footer-art">
       <h4 class="head-foot">Możesz mnie znaleźć na</h4>
       <div class="foot-links">
         <a href="#" class="fb">Facebook</a> <br>
@@ -107,8 +112,6 @@
   <footer>
     <p>Copyright &copy Natalia Krystyna Famulska 2019</p>
   </footer>
-
-<script src="javascript.js"></script>
 
 </body>
 </html>
