@@ -208,6 +208,10 @@ nav{
   font-size: 1em;
 }
 
+.form{
+  width: 100%;
+}
+
 .dane-kontaktowe {
   width: 100%;
   height: 3em;
@@ -254,10 +258,6 @@ nav{
   color: #29282a;
 }
 
-.footer-contact {
-
-}
-
 .head-foot {
   font-size: 1em;
 }
@@ -266,8 +266,8 @@ nav{
   font-family: 'Lato', sans-serif;
 }
 
-.footer-socialmedia {
-
+.footer-art{
+  margin-bottom: 2em;
 }
 
 .foot-links {
@@ -306,7 +306,7 @@ footer{
   }
 
   .log{
-    width: 50%;
+    width: 100%;
   }
 
   .head-text{
