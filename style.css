@@ -248,47 +248,68 @@ nav{
   background-color: #E9DABE;
 }
 
-.with-footer {
+.under-footer {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   background-color: #FAEBDF;
-  height: 10em;
-  color: #29282a;
+  height: 18em;
 }
 
-.head-foot {
-  font-size: 1em;
+.row-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.fa-phone, .fa-envelope{
+  margin-top: 2em;
+}
+
+.ico{
+  font-size: 1.25em;
 }
 
 .foot-text {
   font-family: 'Lato', sans-serif;
-}
-
-.footer-art{
-  margin-bottom: 2em;
-}
-
-.foot-links {
-  font-family: 'Lato', sans-serif;
   font-weight: bold;
+}
 
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.socialmedia-item {
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  background-color: white;
 }
 
 .fb {
   color: #3b5998;
-  text-decoration: none;
 }
 
 .gh {
   color: #24292E;
-  text-decoration: none;
 }
 
 .cp {
   color: #1E1F26;
-  text-decoration: none;
+}
+
+.icon{
+    padding: 0.5em;
+    transition: background-color 0.5s linear;
+    border-radius: 100%;
+}
+
+.icon:hover{
+  background-color: black;
 }
 
 footer{
@@ -359,9 +380,30 @@ footer{
     text-align: center;
   }
 
+  .under-footer{
+    height: 24em;
+    text-align: center;
+  }
+
+  .row-contact{
+    flex-direction: column;
+  }
+
+  .socialmedia{
+    margin-top: 1em;
+  }
+
+  .icon{
+    margin: 0em;
+  }
+
+  .socialmedia-item{
+    width: 2em;
+  }
+
 }
 
-@media (max-width: 1000px){
+@media  (max-width: 1000px){
 
   nav{
     width: 100%;
@@ -408,7 +450,7 @@ footer{
   }
 
   .logo{
-    width: 80%;
+    width: 50%;
   }
 
   .projectbar{
@@ -430,41 +472,14 @@ footer{
 
   .pt3 {
     border-radius: 20px;
-  }
-
-}
-
-@media (min-width: 1001) and (max-width: 1000px){
-
-  .logo{
-    width: 25%;
   }
 
   .nav-opt{
     width: 25%;
   }
 
-  .projectbar{
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .pt1 {
-    border-radius: 20px;
-    margin-bottom: 1em;
-  }
-
-  .pt2 {
-    border-radius: 20px;
-      margin-bottom: 1em;
-  }
-
-  .pt3 {
-    border-radius: 20px;
-  }
-
 }
+
 
 
 
